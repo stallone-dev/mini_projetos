@@ -119,4 +119,4 @@
     // Comando para injetar a matriz na planilha de resultados
     page_resultados.getRange(lin_inicial, col_inicial, lin_final, col_final).setValues(matrizResultado);
     
-}
+};
