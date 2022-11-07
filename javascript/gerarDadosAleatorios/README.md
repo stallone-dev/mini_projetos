@@ -22,25 +22,26 @@ Utiliza-se a biblioteca ``Math.js``, em especial o comando ``Math.floor(Math.ran
 Para o caso dos NOMES, utiliza-se os objetos [bd_nomes.json](https://github.com/stallone-dev/mini_projetos/blob/master/javascript/gerarDadosAleatorios/data/bd_nomes.json) como fonte primária.
 
 Exemplo da coleta de nomes aleatórios:
+```javascript
+function nome_aleatorio(){
 
-    function nome_aleatorio(){
+    fetch('./data/bd_nomes.json')
+        .then((resposta) => resposta.json())
+        .then((dados) => {_nome(dados)});
 
-        fetch('./data/bd_nomes.json')
-            .then((resposta) => resposta.json())
-            .then((dados) => {_nome(dados)});
+    function _nome(bd_nomes){
+        const apelidos       = bd_nomes["apelidos"];
+        const nomes_proprios = bd_nomes["nomes"];
 
-        function _nome(bd_nomes){
-            const apelidos       = bd_nomes["apelidos"];
-            const nomes_proprios = bd_nomes["nomes"];
+        const coletar_apelido = _coletorAleatorio(apelidos);
+        const coletar_nome1   = _coletorAleatorio(nomes_proprios);
+        const coletar_nome2   = _coletorAleatorio(nomes_proprios);
+        
+        const resultado = `${coletar_nome1} ${coletar_nome2} ''${coletar_apelido}''`;
 
-            const coletar_apelido = _coletorAleatorio(apelidos);
-            const coletar_nome1   = _coletorAleatorio(nomes_proprios);
-            const coletar_nome2   = _coletorAleatorio(nomes_proprios);
-            
-            const resultado = `${coletar_nome1} ${coletar_nome2} ''${coletar_apelido}''`;
-
-            nome.innerText = resultado;
-        };
-
+        nome.innerText = resultado;
     };
+
+};
+```
 
