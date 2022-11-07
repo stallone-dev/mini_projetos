@@ -10,7 +10,7 @@ Para ver em ação, acesse:
 [https://stallone-dev.github.io/mini_projetos/javascript/gerarDadosAleatorios/index.html](https://stallone-dev.github.io/mini_projetos/javascript/gerarDadosAleatorios/index.html)
 
 <h1 align="center">
-  <img alt="GIF demonstrando o resultado do projeto" title="demonstracao_V1" src="./_gitHubIMAGES/demonstracao_v1.apng" />
+  <a href="https://stallone-dev.github.io/mini_projetos/javascript/gerarDadosAleatorios/index.html" target="_blank"><img alt="GIF demonstrando o resultado do projeto" title="demonstracao_V1" src="./_gitHubIMAGES/demonstracao_v1.apng" /></a>
 </h1>
 
 ### Links dos códigos utilizados
