@@ -70,7 +70,7 @@ html{
 body{
     background-color: hsl(0, 0%, 7%);
     color: antiquewhite;
-    font-size: x-large;
+    font-size: large;
     display: table-cell;
     width: 80%;
     text-align: center;
