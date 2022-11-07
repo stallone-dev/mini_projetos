@@ -2,7 +2,7 @@
 
 ## Gerador de dados aleatórios
 
-Estudo de como gerar NÚMEROS, DATAS e NOMES aleatórios a partir do JavaScritp Vanilla.
+Estudo de como gerar NÚMEROS, DATAS e NOMES aleatórios a partir do JavaScript Vanilla.
 
 ### Visualização
 
@@ -17,7 +17,7 @@ Para ver em ação, acesse:
 
 ### Resumo do funcionamento
 
-Utiliza-se a biblioteca ``Math.js``, em especial o comando ``Math.floor(Math.random())``, para gerar valores aleatórios e associá-los às informações buscadas.
+Utiliza-se a biblioteca ``Math.js``, em especial o comando ``Math.floor(Math.random())``, para gerar valores aleatórios e associá-los às informações buscadsa em cada campo.
 
 Para o caso dos NOMES, utiliza-se os objetos [bd_nomes.json](https://github.com/stallone-dev/mini_projetos/blob/master/javascript/gerarDadosAleatorios/data/bd_nomes.json) como fonte primária, como mostrado no código abaixo:
 
