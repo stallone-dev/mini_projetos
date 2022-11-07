@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GERADOR</title>
+    
+    <link rel="shortcut icon" href="./style/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <style>
+        button{
+            margin-top: 10%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gerador aleatório</h1><hr>
+
+    <section>
+        <h2>Número</h2>
+        <span class="numero">[]</span>
+    </section>
+
+    <section>
+        <h2>Nome</h2>
+        <span class="nome">[]</span>
+    </section>
+
+    <section>
+        <h2>Idade</h2>
+        <span class="idade">[]</span>
+    </section>
+
+    <section class="botoes">
+        <button class="observar">Observar</button>
+    </section>
+
+    <section>
+        <table class="registro"></table>
+    </section>
+    
+    
+</body>
+
+<script type="module" src="./src/gerador.js"></script>
+
+<script>
+
+    // Script de apoio para gerar tabela de registros
+
+    "use strict";
+
+    const observar = document.querySelector(".observar");
+    const tabela = document.querySelector(".registro");
+    const botoes = document.querySelector(".botoes");
+
+    observar.addEventListener("click", _observar);
+
+    let arrayDados = new Array();
+
+    function _observar(){
+        
+        this.style.color === "red";
+
+        // Acionar loop de registros
+        setInterval(_registrar, 1000);
+
+        tabela.innerHTML = `<thead>
+                            <tr>
+                                <th>Numero</th>
+                                <th>Nome</th>
+                                <th>Idade</th>
+                            </tr>
+                            </thead>
+                            <tbody class="corpoTabela"></tbody>`;
+
+        botoes.innerHTML += 
+                `
+                <p>
+                    Ups, não sei como parar a listagem, 
+                    <br><strong>Ainda! &#x1F60B</strong>
+                </p>
+                <p>
+                    Os dados também estão no LOG dessa página 
+                    <br>Utilize a tecla "F12" para acessar o Console
+                </p>`
+
+        
+        function _registrar(){
+            const dado_num   = document.querySelector(".numero").textContent;  
+            const dado_nome  = document.querySelector(".nome").textContent;
+            const dado_idade = document.querySelector(".idade").textContent;
+            const destino = document.querySelector(".corpoTabela");
+
+            arrayDados.push([dado_num, dado_nome, dado_idade]);
+
+            destino.innerHTML += 
+                        `<tr>
+                            <td>${dado_num}</td>
+                            <td>${dado_nome}</td>
+                            <td>${dado_idade}</td>
+                        </tr>`;
+
+            console.log(arrayDados);
+        }; // Fim função _registrar
+    }; // Fim função observar
+
+
+</script>
+
+</html>
