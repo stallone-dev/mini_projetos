@@ -22,7 +22,7 @@ Utiliza-se a biblioteca ``Math.js``, em especial o comando ``Math.floor(Math.ran
 Para o caso dos NOMES, utiliza-se os objetos [bd_nomes.json](https://github.com/stallone-dev/mini_projetos/blob/master/javascript/gerarDadosAleatorios/data/bd_nomes.json) como fonte primária.
 
 Exemplo da coleta de nomes aleatórios:
-```javascript
+```js
 function nome_aleatorio(){
 
     fetch('./data/bd_nomes.json')
