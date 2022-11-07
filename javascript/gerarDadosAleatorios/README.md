@@ -47,7 +47,7 @@ function _coletorAleatorio(conjunto, acrescimo = 0){
 };
 ```
 
-Para o caso dos ``NOMES``, utilzou-se a API ``fetch`` para acessar o JSON <[bd_nomes.json](https://github.com/stallone-dev/mini_projetos/blob/master/javascript/gerarDadosAleatorios/data/bd_nomes.json)> e extrair dele os Arrays de nomes possíveis, como mostrado no código abaixo:
+Para o caso dos ``NOMES``, utilizou-se a API ``fetch`` para acessar o JSON <[bd_nomes.json](https://github.com/stallone-dev/mini_projetos/blob/master/javascript/gerarDadosAleatorios/data/bd_nomes.json)> e extrair dele os Arrays de nomes possíveis, como mostrado no código abaixo:
 
 ```js
 function nome_aleatorio(){
