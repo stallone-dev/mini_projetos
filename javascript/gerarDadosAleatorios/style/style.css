@@ -4,6 +4,10 @@
     src: url('./JetBrains.ttf');
 }
 
+a{
+    color:rgb(45, 234, 255);
+}
+
 table {
     width: 100%;
     margin-bottom: 100px;
