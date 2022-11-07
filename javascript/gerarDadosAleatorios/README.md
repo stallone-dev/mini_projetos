@@ -9,6 +9,10 @@ Estudo de como gerar NÚMEROS, DATAS e NOMES aleatórios a partir do JavaScript 
 Para ver em ação, acesse:
 [https://stallone-dev.github.io/mini_projetos/javascript/gerarDadosAleatorios/index.html](https://stallone-dev.github.io/mini_projetos/javascript/gerarDadosAleatorios/index.html)
 
+<h1 align="center">
+  <img alt="GIF demonstrando o resultado do projeto" title="demonstracao_V1" src="./_gitHubIMAGES/demonstracao_v1.apng" />
+</h1>
+
 ### Links dos códigos utilizados
 
 - [Codigo JS](https://github.com/stallone-dev/mini_projetos/blob/master/javascript/gerarDadosAleatorios/src/gerador.js)
