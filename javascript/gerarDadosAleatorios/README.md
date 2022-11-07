@@ -21,9 +21,24 @@ Para ver em ação, acesse:
 
 ### Resumo do funcionamento
 
-Utiliza-se a biblioteca ``Math.js``, em especial o comando ``Math.floor(Math.random())``, para gerar valores aleatórios e associá-los às informações buscadsa em cada campo.
+Para gerar os valores aleatórios, utilizou-se a biblioteca ``Math.js``, em especial o comando ``Math.floor(Math.random())``. A função principal utilizada é esta:
 
-Para o caso dos NOMES, utiliza-se os objetos [bd_nomes.json](https://github.com/stallone-dev/mini_projetos/blob/master/javascript/gerarDadosAleatorios/data/bd_nomes.json) como fonte primária, como mostrado no código abaixo:
+```js
+function _coletorAleatorio(conjunto, acrescimo = 0){
+    let resultado = undefined;
+
+    if(Array.isArray(conjunto)){
+        resultado = conjunto[Math.floor(Math.random() * conjunto.length + acrescimo)] 
+                    ?? "INEXISTENTE";
+    } else {
+        resultado = Math.floor(Math.random() * conjunto + acrescimo);
+    }
+
+    return resultado;
+};
+```
+
+Para o caso dos NOMES, utilzou-se uma seleção dentro dos objetos ``nomes`` e ``apelidos`` do JSON <[bd_nomes.json](https://github.com/stallone-dev/mini_projetos/blob/master/javascript/gerarDadosAleatorios/data/bd_nomes.json)>, como mostrado no código abaixo:
 
 ```js
 function nome_aleatorio(){
