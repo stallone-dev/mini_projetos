@@ -9,19 +9,18 @@ Estudo de como gerar NÚMEROS, DATAS e NOMES aleatórios a partir do JavaScritp 
 Para ver em ação, acesse:
 [https://stallone-dev.github.io/mini_projetos/javascript/gerarDadosAleatorios/index.html](https://stallone-dev.github.io/mini_projetos/javascript/gerarDadosAleatorios/index.html)
 
-#### Links dos códigos
+### Links dos códigos
 
 - [Codigo JS](https://github.com/stallone-dev/mini_projetos/blob/master/javascript/gerarDadosAleatorios/src/gerador.js)
 - [Codigo HTML](https://github.com/stallone-dev/mini_projetos/blob/master/javascript/gerarDadosAleatorios/index.html)
 - [Codigo CSS](https://github.com/stallone-dev/mini_projetos/blob/master/javascript/gerarDadosAleatorios/style/style.css)
 
-#### Resumo do funcionamento
+### Resumo do funcionamento
 
 Utiliza-se a biblioteca ``Math.js``, em especial o comando ``Math.floor(Math.random())``, para gerar valores aleatórios e associá-los às informações buscadas.
 
-Para o caso dos NOMES, utiliza-se os objetos [bd_nomes.json](https://github.com/stallone-dev/mini_projetos/blob/master/javascript/gerarDadosAleatorios/data/bd_nomes.json) como fonte primária.
+Para o caso dos NOMES, utiliza-se os objetos [bd_nomes.json](https://github.com/stallone-dev/mini_projetos/blob/master/javascript/gerarDadosAleatorios/data/bd_nomes.json) como fonte primária, como mostrado no código abaixo:
 
-Exemplo da coleta de nomes aleatórios:
 ```js
 function nome_aleatorio(){
 
